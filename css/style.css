@@ -1,0 +1,20 @@
+.task{
+    font-size: 24px;
+    text-align: center;
+    color: blue;
+}
+
+.imageflex{
+    display: flex;
+    flex-direction: row;
+}
+
+.imageitem{
+    list-style: none;
+    margin: 7px;
+}
+
+.imagewidth{
+    width: 250px;
+    height: 160px;
+}
