@@ -6,7 +6,6 @@ function onInputChange(event) {
     if(event.target.value === ''){
         spanEl.textContent = 'незнакомец'
     };
-
 }
 
 inputEl.addEventListener('input', onInputChange);
