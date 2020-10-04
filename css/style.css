@@ -1,20 +1,32 @@
-.task{
-    font-size: 24px;
-    text-align: center;
-    color: blue;
+.task {
+  font-size: 24px;
+  text-align: center;
+  color: blue;
 }
 
-.imageflex{
-    display: flex;
-    flex-direction: row;
+.imageflex {
+  display: flex;
+  flex-direction: row;
 }
 
-.imageitem{
-    list-style: none;
-    margin: 7px;
+.imageitem {
+  list-style: none;
+  margin: 7px;
 }
 
-.imagewidth{
-    width: 250px;
-    height: 160px;
+.imagewidth {
+  width: 250px;
+  height: 160px;
+}
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }
