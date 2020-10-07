@@ -19,8 +19,15 @@ const images = [
 
 const galleryEl = document.querySelector('#gallery');
 
-images.forEach(image =>{
-    galleryEl.insertAdjacentHTML('beforeend', `<li class="imageitem"><img src="${image.url}" alt="${image.alt}" class="imagewidth"></img></li>`);
-});
+const addImagesItems = transaction => {
+  const {url, alt} = transaction;
+  return `<li class="imageitem"><img src="${url}" alt="${alt}" class="imagewidth"></img></li>`
+};
 
+const transactionImages = images
+  .map(addImagesItems)
+  .join('');
+
+galleryEl.insertAdjacentHTML('beforeend', transactionImages);
 galleryEl.classList.add("imageflex");
+console.log(transactionImages);
